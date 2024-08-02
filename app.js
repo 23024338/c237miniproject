@@ -17,10 +17,14 @@ const upload = multer({ storage: storage });
 
 // create mysql connection 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'cagApp'
+    // host: 'localhost',
+    // user: 'root',
+    // password: '',
+    // database: 'cagApp'
+    host: 'mysql-isabel.alwaysdata.net',
+    user: 'isabel',
+    password: 'M!ngfrom669558',
+    database: 'isabel_cagdatabase'
 });
 
 connection.connect((err) => {
